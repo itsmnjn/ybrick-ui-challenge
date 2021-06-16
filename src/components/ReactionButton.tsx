@@ -28,7 +28,7 @@ const ReactionButton: React.FC<ReactionButtonProps> = ({ className }) => {
 
   const closeReactions = () => {
     setReactionsOpacity(0)
-    setTimeout(() => setReactionsZIndex(-1), 150)
+    setTimeout(() => setReactionsZIndex(-1), 150) // setting zIndex back to -1 needs delay of 150 ms (default tailwind duration) in order for animation to complete, else element just pops out
   }
 
   const selectReaction = (reaction: string) => {
