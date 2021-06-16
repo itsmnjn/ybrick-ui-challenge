@@ -17,8 +17,8 @@ const ReactionTrail: React.FC<ReactionTrailProps> = ({
 }) => {
   const items = React.Children.toArray(children)
   const trail = useTrail(items.length, {
-    config: { mass: 3.5, tension: 2000, friction: 100 },
-    from: { opacity: 0, y: 15 },
+    config: { mass: 2.7, tension: 3000, friction: 105 },
+    from: { opacity: 0, y: 12 },
     to: { opacity: 1, y: 0 },
     reset: true,
   })
