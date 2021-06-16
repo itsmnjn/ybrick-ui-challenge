@@ -42,11 +42,10 @@ const ReactionButton: React.FC<ReactionButtonProps> = ({ className }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
+      {/* trail takes care of initial pop-up animation */}
       <ReactionTrail
         reactionsOpacity={reactionsOpacity}
         reactionsZIndex={reactionsZIndex}
-        setSelectedReaction={setSelectedReaction}
-        closeReactions={closeReactions}
       >
         <ReactionIcon
           imgSrc="./icons/star.svg"

@@ -4,15 +4,11 @@ import { useTrail, a } from '@react-spring/web'
 interface ReactionTrailProps {
   reactionsOpacity: number
   reactionsZIndex: number
-  setSelectedReaction: React.Dispatch<React.SetStateAction<string>>
-  closeReactions: () => void
 }
 
 const ReactionTrail: React.FC<ReactionTrailProps> = ({
   reactionsOpacity,
   reactionsZIndex,
-  setSelectedReaction,
-  closeReactions,
   children,
 }) => {
   const items = React.Children.toArray(children)
